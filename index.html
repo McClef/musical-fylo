@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>frontend Mentor fylo</title>
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+    <main id="main">
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Martins Michael</a>.
+        </div>
+        
+            <div class="img">
+                <img src="images/bg-desktop.png" alt="">
+            </div>
+            <div class="img-2" style="display: none;">
+                <img src="images/bg-mobile.png" alt="">
+            </div>
+    <div id="container">
+            <div></div>
+                <div id="left">
+                    <div class="fylo">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <div class="bg-icon">
+                            <img src="images/icon-document.svg" alt="" class="icon-1">
+                        </div>
+                        <div class="bg-icon">
+                            <img src="images/icon-folder.svg" alt="" class="icon-2">
+                        </div>
+                        <div class="bg-icon">
+                            <img src="images/icon-upload.svg" alt="" class="icon-3">
+                        </div>
+                    </div>
+                </div>
+                <div id="right">
+            
+                    <p class="class">You've used <b>815 GB</b> of your storage</p>
+                    <div class="bar">
+                        <div class="prog-bar">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>0 GB</p>
+                        <p>1000 GB</p>
+                    </div>
+                    
+                    <div class="tooltip">
+                        <p class="GB">185 <span> <p>GB LEFT</p> </span></p>
+                        <span class="triangle"></span>
+                    </div>
+            
+                </div>
+
+        </div>
+
+    </main>
 </body>
 </html>
